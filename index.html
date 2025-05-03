@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MGP Consulting - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Home | MGP Consulting</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Where global ambition meets U.S. opportunity.</h1>
-    <p>Empowering international businesses to succeed in the U.S. market</p>
-    <a href="contact.html" class="cta-button">Let's Connect →</a>
-</header>
-
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Our Services</a>
+  <a href="contact.html">Contact</a>
+  <button id="darkModeToggle">☀️ / 🌙</button>
 </nav>
 
+<header>
+  <h1>Where global ambition meets U.S. opportunity.</h1>
+  <p>Empowering international businesses to succeed in the U.S. market.</p>
+  <a href="contact.html" class="cta-button">Let's Connect →</a>
+  <div class="scroll-down">
+    <a href="#vision"><span></span></a>
+  </div>
+</header>
+
 <section id="vision" class="fade-in">
-    <h2>Our Vision</h2>
-    <p>We exist to bridge ambition and achievement—helping international businesses realize their full potential and thrive in the US market.</p>
+  <h2>Our Vision</h2>
+  <p>We exist to bridge ambition and achievement—helping international businesses realize their full potential and thrive in the U.S. market.</p>
 </section>
+
+<div class="wave"></div>
 
 <section id="what-we-do" class="fade-in">
-    <h2>What We Do</h2>
-    <p>MGP Consulting delivers innovative solutions and expert guidance to international companies expanding into the U.S. market. With deep expertise in business development, marketing, and public affairs, we provide everything clients need to succeed in one of the world’s most competitive markets.</p>
+  <h2>What We Do</h2>
+  <p>MGP Consulting delivers innovative solutions and expert guidance to international companies expanding into the U.S. market.</p>
 </section>
 
+<a href="#" class="back-to-top">↑</a>
+
 <footer>
-    <p>© 2025 MGP Consulting. All rights reserved.</p>
+  <p>© 2025 MGP Consulting. All rights reserved.</p>
 </footer>
 
-<script>
-    const faders = document.querySelectorAll('.fade-in');
-    window.addEventListener('scroll', () => {
-        faders.forEach(fader => {
-            const rect = fader.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                fader.classList.add('visible');
-            }
-        });
-    });
-</script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
