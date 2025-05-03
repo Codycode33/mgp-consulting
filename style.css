@@ -1,0 +1,123 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Red Hat Display', 'Helvetica', sans-serif;
+    background: #F5F5F5;
+    color: #333333;
+}
+
+header {
+    background: linear-gradient(135deg, #1F3A93, #117A65);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/abstract-bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 64px;
+    margin: 0;
+    animation: fadeIn 2s ease-in;
+}
+
+header p {
+    font-size: 24px;
+    margin-top: 20px;
+    animation: slideUp 2s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #117A65;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #F4B400;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #1F3A93;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #F4B400;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    background: #1F3A93;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+    header p {
+        font-size: 20px;
+    }
+}
