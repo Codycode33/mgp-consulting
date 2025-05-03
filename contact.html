@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us - MGP Consulting</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Contact Us | MGP Consulting</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Our Services</a>
+  <a href="contact.html">Contact</a>
+  <button id="darkModeToggle">☀️ / 🌙</button>
 </nav>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>📧 <a href="mailto:mara@mgp-consulting.com">mara@mgp-consulting.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com" target="_blank">Connect on LinkedIn</a></p>
+<header style="min-height: 40vh;">
+  <h1>Contact Us</h1>
+</header>
 
-    <div style="margin-top:30px;">
-        <iframe src="https://calendly.com/YOUR-CALENDLY-USERNAME" width="100%" height="600" frameborder="0"></iframe>
-    </div>
+<section class="fade-in">
+  <h2>Let's Work Together</h2>
+  <div class="contact-form">
+    <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
+<div class="wave"></div>
+
+<section class="fade-in">
+  <h2>Schedule a Call</h2>
+  <iframe src="https://calendly.com/YOUR-CALENDLY-USERNAME" width="100%" height="600" frameborder="0"></iframe>
+</section>
+
+<a href="#" class="back-to-top">↑</a>
+
 <footer>
-    <p>© 2025 MGP Consulting. All rights reserved.</p>
+  <p>© 2025 MGP Consulting. All rights reserved.</p>
 </footer>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
