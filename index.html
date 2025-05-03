@@ -21,12 +21,12 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section id="vision">
+<section id="vision" class="fade-in">
     <h2>Our Vision</h2>
     <p>We exist to bridge ambition and achievement—helping international businesses realize their full potential and thrive in the US market.</p>
 </section>
 
-<section id="what-we-do">
+<section id="what-we-do" class="fade-in">
     <h2>What We Do</h2>
     <p>MGP Consulting delivers innovative solutions and expert guidance to international companies expanding into the U.S. market. With deep expertise in business development, marketing, and public affairs, we provide everything clients need to succeed in one of the world’s most competitive markets.</p>
 </section>
@@ -34,6 +34,19 @@
 <footer>
     <p>© 2025 MGP Consulting. All rights reserved.</p>
 </footer>
+
+<script>
+    // Simple scroll fade-in
+    const faders = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+        faders.forEach(fader => {
+            const rect = fader.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                fader.classList.add('visible');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
