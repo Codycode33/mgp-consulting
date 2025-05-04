@@ -133,6 +133,12 @@ header p {
     background: #F4B400;
 }
 
+.fade-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
 /* SECTIONS */
 section {
     padding: 100px 20px;
