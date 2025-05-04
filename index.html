@@ -6,6 +6,18 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const text = document.querySelector('.fade-text');
+    setTimeout(() => {
+        text.style.opacity = '1';
+        text.style.transform = 'translateY(0)';
+    }, 3000); // Adjust this delay if needed (3000ms = 3s)
+});
+</script>
+  
+
 <body>
 
 <nav>
@@ -16,10 +28,24 @@
   <button id="darkModeToggle">☀️ / 🌙</button>
 </nav>
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <header>
-  <h1>Where global ambition meets U.S. opportunity.</h1>
-  <p>Empowering international businesses to succeed in the U.S. market.</p>
-  <a href="contact.html" class="cta-button">Let's Connect →</a>
+  <lottie-player
+    src="https://lottie.host/9fd7ed3d-6db7-4b2d-8eae-60b3e3a1a84b/RhZ2QeT4ZF.json"
+    background="transparent"
+    speed="1"
+    style="width: 100%; height: 85vh;"
+    loop
+    autoplay>
+  </lottie-player>
+
+  <div class="header-text fade-text">
+    <h1>Where global ambition meets U.S. opportunity.</h1>
+    <p>Empowering international businesses to succeed in the U.S. market.</p>
+    <a href="contact.html" class="cta-button">Let's Connect →</a>
+  </div>
+
   <div class="scroll-down">
     <a href="#vision"><span></span></a>
   </div>
