@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => {
     });
 });
 */
+
 document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.getElementById('darkModeToggle');
     const body = document.body;
@@ -17,21 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check localStorage on load
     if (localStorage.getItem('dark-mode') === 'enabled') {
         body.classList.add('dark-mode');
-        toggle.innerHTML = '🌙'; // Set correct icon
-    } else {
-        toggle.innerHTML = '☀️';
+        toggle.checked = true; // Turn slider ON
     }
 
-    toggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-        
-        // Save preference
-        if (body.classList.contains('dark-mode')) {
+    toggle.addEventListener('change', function() {
+        if (toggle.checked) {
+            body.classList.add('dark-mode');
             localStorage.setItem('dark-mode', 'enabled');
-            toggle.innerHTML = '🌙';
         } else {
+            body.classList.remove('dark-mode');
             localStorage.setItem('dark-mode', 'disabled');
-            toggle.innerHTML = '☀️';
         }
     });
 });
