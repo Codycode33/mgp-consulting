@@ -10,10 +10,30 @@ window.addEventListener('scroll', () => {
     });
 });
 */
-// Dark mode toggle
-const toggle = document.getElementById('darkModeToggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Check localStorage on load
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+        toggle.innerHTML = '🌙'; // Set correct icon
+    } else {
+        toggle.innerHTML = '☀️';
+    }
+
+    toggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        
+        // Save preference
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+            toggle.innerHTML = '🌙';
+        } else {
+            localStorage.setItem('dark-mode', 'disabled');
+            toggle.innerHTML = '☀️';
+        }
+    });
 });
 
 // Back to top button
