@@ -285,6 +285,20 @@ body.dark-mode .cta-button {
     color: #1f1f1f;
 }
 
+.dark-mode-button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.dark-mode-button:hover {
+    transform: scale(1.2);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     header h1 {
