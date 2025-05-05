@@ -299,21 +299,23 @@ body.dark-mode .cta-button {
     transform: scale(1.2);
 }
 
-/* SLIDER TOGGLE */
+/* SWITCH OUTER */
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 26px;
+    width: 52px;
+    height: 28px;
     margin-left: 15px;
 }
 
+/* Hide input checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
+/* Slider Background */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -321,30 +323,33 @@ body.dark-mode .cta-button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc; /* light gray default */
+    background-color: #ccc; /* Light gray for light mode */
     transition: 0.4s;
     border-radius: 34px;
 }
 
-.slider::before {
+/* Circle (the dial) with Icon inside */
+.slider .icon {
     position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     left: 3px;
     bottom: 3px;
+    background: url('https://img.icons8.com/ios-filled/50/000000/sun--v1.png') no-repeat center;
+    background-size: 60%;
     background-color: white;
-    transition: 0.4s;
     border-radius: 50%;
+    transition: 0.4s;
 }
 
-/* When the input is checked */
+/* When dark mode is ON */
 input:checked + .slider {
-    background-color: #666; /* dark gray when switched on */
+    background-color: #666; /* darker background */
 }
 
-input:checked + .slider::before {
+input:checked + .slider .icon {
     transform: translateX(24px);
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/moon-symbol.png'); /* White Moon */
 }
 
 /* RESPONSIVE */
