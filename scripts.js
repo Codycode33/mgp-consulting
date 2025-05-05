@@ -1,4 +1,5 @@
 // Scroll fade-ins
+/*
 const faders = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
     faders.forEach(fader => {
@@ -8,7 +9,7 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
+*/
 // Dark mode toggle
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('click', () => {
