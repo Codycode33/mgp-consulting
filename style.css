@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', 'Red Hat Display', 'Helvetica', sans-serif;
     background: #ffffff;
     color: #333333;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 /* NAVIGATION */
@@ -22,7 +22,7 @@ nav {
     justify-content: center;
     align-items: center;
     background: rgba(31, 58, 147, 0.95);
-    padding: 14px 0;
+    padding: 12px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,9 +32,9 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     transition: color 0.3s;
 }
 
@@ -45,39 +45,39 @@ nav a:hover {
 /* HEADER */
 header {
     background: linear-gradient(135deg, #1F3A93, #117A65);
-    min-height: 85vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     color: white;
     position: relative;
     overflow: hidden;
 }
 
 header h1 {
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     animation: fadeInDown 2s ease;
 }
 
 header p {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 600px;
     animation: fadeInUp 2s ease;
 }
 
 .cta-button {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 40px;
+    margin-top: 20px;
+    padding: 12px 30px;
     background-color: #F4B400;
     color: white;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     transition: background 0.3s, transform 0.3s;
@@ -91,7 +91,7 @@ header p {
 /* SCROLL DOWN ARROW */
 .scroll-down {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
@@ -99,30 +99,30 @@ header p {
 
 .scroll-down span {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
     transform: rotate(45deg);
 }
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(10px); }
-    60% { transform: translateX(-50%) translateY(5px); }
+    40% { transform: translateX(-50%) translateY(8px); }
+    60% { transform: translateX(-50%) translateY(4px); }
 }
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    bottom: 30px;
+    right: 25px;
     background: #117A65;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     display: none;
     z-index: 9999;
     transition: background 0.3s;
@@ -134,8 +134,8 @@ header p {
 
 /* SECTIONS */
 section {
-    padding: 100px 20px;
-    max-width: 1200px;
+    padding: 60px 20px;
+    max-width: 1100px;
     margin: auto;
     position: relative;
 }
@@ -143,34 +143,34 @@ section {
 h2 {
     text-align: center;
     color: #1F3A93;
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 p {
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 /* SERVICE CARDS */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 25px;
 }
 
 .service-card {
     background: #f5f5f5;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     transition: all 0.4s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* CONTACT FORM */
@@ -183,20 +183,20 @@ p {
 .contact-form input, .contact-form textarea {
     width: 100%;
     max-width: 500px;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .contact-form button {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #1F3A93;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     transition: background 0.3s;
 }
@@ -205,10 +205,10 @@ p {
     background-color: #117A65;
 }
 
-/* WAVES DIVIDERS */
+/* WAVES DIVIDER */
 .wave {
     position: relative;
-    height: 150px;
+    height: 120px;
     background: none;
     overflow: hidden;
 }
@@ -216,7 +216,7 @@ p {
 .wave::before {
     content: '';
     position: absolute;
-    top: -50px;
+    top: -40px;
     left: 0;
     width: 200%;
     height: 200%;
@@ -235,9 +235,9 @@ footer {
     background-color: #1F3A93;
     color: white;
     text-align: center;
-    padding: 40px 20px;
-    font-size: 16px;
-    margin-top: 60px;
+    padding: 25px 20px;
+    font-size: 15px;
+    margin-top: 40px;
 }
 
 /* FADE-IN ANIMATION */
@@ -254,7 +254,7 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.visible {
@@ -288,9 +288,9 @@ body.dark-mode .cta-button {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     header p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
