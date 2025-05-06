@@ -221,27 +221,6 @@ footer {
     margin-top: 40px;
 }
 
-/* FADE-IN ANIMATION */
-@keyframes fadeInDown {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* DARK MODE */
 body.dark-mode {
@@ -323,9 +302,6 @@ body.dark-mode .cta-button {
     width: 100%;
 }
 
-.service-line.right {
-    justify-content: flex-end;
-}
 
 .service-icon {
     width: 60px;
