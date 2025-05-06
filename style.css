@@ -328,6 +328,12 @@ body.dark-mode .cta-button {
     border-radius: 34px;
 }
 
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
 /* Circle (the dial) with Icon inside */
 .slider .icon {
     position: absolute;
