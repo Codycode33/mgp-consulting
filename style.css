@@ -334,6 +334,26 @@ body.dark-mode .cta-button {
     margin-bottom: 20px;
 }
 
+.service-card {
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.15);
+    transition: transform 0.4s ease;
+}
+
+
 /* Circle (the dial) with Icon inside */
 .slider .icon {
     position: absolute;
