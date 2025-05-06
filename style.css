@@ -369,6 +369,12 @@ body.dark-mode .cta-button {
     transition: transform 0.4s ease;
 }
 
+@media (max-width: 768px) {
+    .service-line, .service-line.right {
+        justify-content: center;
+    }
+}
+
 
 /* Circle (the dial) with Icon inside */
 .slider .icon {
