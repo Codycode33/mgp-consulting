@@ -406,10 +406,44 @@ input:checked + .slider .icon {
     border: 4px solid #1F3A93;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* GENERAL RESPONSIVE RULES */
+
+@media (max-width: 1024px) {
     header h1 {
         font-size: 36px;
+    }
+    header p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    .services-list {
+        gap: 30px;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-line {
+        justify-content: center;
+    }
+    .service-card {
+        width: 90%; /* fill more width on small screens */
+    }
+    .team-member {
+        width: 90%;
+    }
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 32px;
     }
     header p {
         font-size: 16px;
