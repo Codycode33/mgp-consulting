@@ -377,6 +377,7 @@ input:checked + .slider .icon {
     gap: 40px;
     margin-top: 50px;
     align-items: start;
+    grid-auto-rows: 1fr;
 }
 
 .team-member {
